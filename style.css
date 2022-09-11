@@ -1,0 +1,50 @@
+body {
+	border: 0px;
+	margin: 0px;
+}
+
+#bottom_container {
+	width: 100%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+#bottom_container_header {
+	color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-family: Verdana;
+}
+
+#bottom_container_scroll {
+	width: 100%;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.bottom_container_scroll_item {
+	color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-family: Verdana;
+	cursor: pointer;
+}
+
+#bottom_container_reponse {
+	color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-family: Verdana;
+	cursor: pointer;
+}
+
+#background_image {
+	width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background: #27272f;
+    float: left;
+    position: absolute;
+    z-index: 0;
+}
