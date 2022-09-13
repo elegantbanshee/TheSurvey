@@ -17,10 +17,12 @@ var TheSurvey = class {
 			["Do you like software?", "No", "Yes"]
 		];
 		this.mallOptions = this.MALL_OPTIONS;
-		this.mallAge = Math.max(18, Math.round(Math.random() * 25));
+		var ages = ["18", "19", "20", "21", "22", "23", "24", "25"];
+		this.mallAge = ages[Math.round(Math.random() * (ages.length - 1))];
 		var cups = ["AA", "B", "C", "D", "DD"];
 		this.mallCupSize = cups[Math.round(Math.random() * (cups.length - 1))];
-		this.mallShoeSize = Math.max(5, Math.round(Math.random() * 12));
+		var sizes = ["5", "6", "7", "8", "9", "10", "11", "12"];
+		this.mallShoeSize = sizes[Math.round(Math.random() * (sizes.length - 1))];
 		this.mallHeightFeet = Math.round(Math.random()) === 0 ? 4 : 5;
 		this.mallHeightInches = Math.round(Math.random() * 11);
 
